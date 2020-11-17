@@ -1,0 +1,59 @@
+* {
+margin: 0;
+padding: 0;
+}
+
+html,
+body {
+font-family: Arial;
+}
+
+.menu {
+overflow: hidden;
+background-color: #fff;
+}
+
+.menu a {
+float: left;
+display: block;
+color: #888;
+font-size: 17px;
+text-align: center;
+text-decoration: none;
+padding: 14px 16px;
+border-bottom: 3px solid transparent;
+}
+
+.menu a:hover {
+border-bottom: 3px solid #f00;
+}
+
+.menu a.activo {
+border-bottom: 3px solid #f00;
+}
+
+.menu .icono {
+display: none;
+}
+
+@media screen and (max-width: 900px) {
+.menu a:not(:first-child) {display: none;}
+.menu a.icono {
+float: right;
+display: block;
+}
+}
+
+@media screen and (max-width: 900px) {
+.menu.responsive {position: relative;}
+.menu.responsive a.icono {
+position: absolute;
+right: 0;
+top: 0;
+}
+.menu.responsive a {
+float: none;
+display: block;
+text-align: left;
+}
+}
